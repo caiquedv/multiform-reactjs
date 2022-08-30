@@ -9,7 +9,7 @@ export const Tks = () => {
 
     useEffect(() => {
         if (state.name === '') {
-            navigate('/');
+            navigate('/multiform-reactjs/');
         } else {
             dispatch({
                 type: FormActions.setCurrentStep,

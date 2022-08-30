@@ -13,7 +13,7 @@ export const FormStep3 = () => {
         e.preventDefault();
 
         if (state.email !== '' && state.github !== '') {
-            navigate('/step4');
+            navigate('/multiform-reactjs/step4');
         } else {
             alert('Preencha os dados.')
         }
@@ -35,7 +35,7 @@ export const FormStep3 = () => {
 
     useEffect(() => {
         if (state.name === '') {
-            navigate('/');
+            navigate('/multiform-reactjs/');
         } else {
             dispatch({
                 type: FormActions.setCurrentStep,
@@ -65,7 +65,7 @@ export const FormStep3 = () => {
                     </label>
 
                     <label>
-                        <Link to='/step2'>Voltar</Link>
+                        <Link to='/multiform-reactjs/step2'>Voltar</Link>
                         <button onClick={handleNextStep}>Finalizar Cadastro</button>
                     </label>
                 </form>

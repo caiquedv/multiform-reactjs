@@ -12,7 +12,7 @@ export const FormStep4 = () => {
         e.preventDefault();
 
         if (state.name !== '') {
-            navigate('/tks');
+            navigate('/multiform-reactjs/tks');
         } else {
             alert('Preencha os dados.')
         }
@@ -20,7 +20,7 @@ export const FormStep4 = () => {
 
     useEffect(() => {
         if (state.name === '') {
-            navigate('/');
+            navigate('/multiform-reactjs/');
         } else {
             dispatch({
                 type: FormActions.setCurrentStep,
@@ -50,7 +50,7 @@ export const FormStep4 = () => {
                     </li>
                 </ul>
 
-                <Link to='/step3'>Voltar</Link>
+                <Link to='/multiform-reactjs/step3'>Voltar</Link>
                 <button onClick={handleNextStep}>Confirmar Dados</button>
             </C.Container>
         </Theme>

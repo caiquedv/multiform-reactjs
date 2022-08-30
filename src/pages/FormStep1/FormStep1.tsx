@@ -12,7 +12,7 @@ export const FormStep1 = () => {
         e.preventDefault();
         
         if(state.name !== '') {
-            navigate('/step2');
+            navigate('/multiform-reactjs/step2');
         } else {
             alert('Preencha os dados.')
         }

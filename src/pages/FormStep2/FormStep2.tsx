@@ -12,7 +12,7 @@ export const FormStep2 = () => {
 
     const handleNextStep = () => {
         if (state.name !== '') {
-            navigate('/step3');
+            navigate('/multiform-reactjs/step3');
         } else {
             alert('Preencha os dados.')
         }
@@ -27,7 +27,7 @@ export const FormStep2 = () => {
 
     useEffect(() => {
         if (state.name === '') {
-            navigate('/');
+            navigate('/multiform-reactjs/');
         } else {
             dispatch({
                 type: FormActions.setCurrentStep,
@@ -61,7 +61,7 @@ export const FormStep2 = () => {
                     onClick={() => setLevel(1)}
                 />
 
-                <Link to='/'>Voltar</Link>
+                <Link to='/multiform-reactjs/'>Voltar</Link>
                 <button onClick={handleNextStep}>Próximo</button> 
             </C.Container>
         </Theme>
